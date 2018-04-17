@@ -1,3 +1,8 @@
+"""
+Class methods are marked with a classmethod decorator
+Example:
+
+"""
 class Person:
 	def __init__(self, name):
 		self.name = name
@@ -9,6 +14,3 @@ class Person:
 person = Person('John')
 print(person.name)
 person.sayHi()	    	
-
-
-
