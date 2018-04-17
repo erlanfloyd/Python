@@ -1,5 +1,5 @@
  #----------- Class Methods -----------#
-             
+                  
 
 class Rectangle:
   def __init__(self, width, height):
@@ -12,9 +12,14 @@ class Rectangle:
   @classmethod
   def sayHi(cls):
     print('Hi')
+
+rectangle = Rectangle('10','55')
+print(rectangle.width, rectangle.height)
+rectangle.sayHi()
     
     
-    
+
+
 class Rectangle:
   def __init__(self, width, height):
     self.width = width
