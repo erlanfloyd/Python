@@ -8,4 +8,3 @@ for name, color in zip(names, colors):
 players = ['zizu', 'henry', 'ronni', 'david']
 for player in reversed(players):
   print(player, end='')
-  
