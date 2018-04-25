@@ -7,4 +7,10 @@ for name, color in zip(names, colors):
   
 players = ['zizu', 'henry', 'ronni', 'david']
 for player in reversed(players):
-  print(player, end='')
+  print(player, end=' ')
+
+print('\n', players)
+print(players[::-1])
+
+word = 'hello'
+print(word[::-1])
