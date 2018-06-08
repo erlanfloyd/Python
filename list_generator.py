@@ -14,7 +14,7 @@ print(l1)
                          #---------------------------- Same thing --------------------#
 
 def two():
-	l = [x for x in range(10**4) if x % 2 == 0]
+	l = [i for i in range(10**4) if i % 2 == 0]
 	return l
 
 l2 = two()
