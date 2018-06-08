@@ -21,7 +21,6 @@ myFunc()
 
 
 
-
 def outside():
 	x = 5
 	def inside():
