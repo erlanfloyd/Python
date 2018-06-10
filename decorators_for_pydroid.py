@@ -1,24 +1,25 @@
                                  #--------------- Общее понимание как образуется декоратор -----------------# 
 
-def outside(func):
-	def inside():
-		return func() + 5
-	return inside
+def decorator(func_to_decorate):
+	def wrapper():
+		return func_to_decorate() + 5
+	return wrapper
 	
 def func_old():
 	return 5
 
-func_old = outside(func_old)
+func_old = decorator(func_old)
 print(func_old())
 
 
                                  #--------------- Сам декоратор через синтаксис @ ---------------------#
 
-def outside(func):
-	def inside():
-		return func() + 5
-	return inside
-@outside	
+def decorator(func_to_decorate):
+	def wrapper():
+		return func_to_decorate() + 5
+	return wrapper
+
+@decorator	
 def func_old():
 	return 2
 
